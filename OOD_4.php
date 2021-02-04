@@ -60,7 +60,7 @@ class CurrencyConverter
   }
   //function conversio
   public function ConvertPoundsToEuros(){
-    $this->pounds=$this->euros*$this->exchange;
+    $this->pounds=$this->euros/$this->exchange;
     return $this->pounds;
   }
 
