@@ -27,11 +27,13 @@ protected function getbestSense()
 }
 
 //construct
-public function __construct($age)
+public function __construct($healthCondition,$bestSense,$age)
 {
+  $this->healthCondition=$healthCondition;
+  $this->bestSense=$bestSense;
   parent::setAge($age);
-  $this->healthCondition=HEATH_CONDITION[0];
-  $this->bestSense=(parent::BEST_SENSE[0]);
+  /*$this->healthCondition=HEATH_CONDITION[0];
+  $this->bestSense=(parent::BEST_SENSE[0]);*/
 }
 
 //print

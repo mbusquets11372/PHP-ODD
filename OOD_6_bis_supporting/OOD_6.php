@@ -9,11 +9,11 @@ require "PersonOOD6.php";
 require "Cat.php";
 
 //menor o igual de 50
-$cat1=new Cat(50);
+$cat1=new Cat(HEATH_CONDITION[0],LivingBeing::BEST_SENSE[0],50);
 $cat1->print();
 
 //major de 50
-$cat2=new Cat(75);
+$cat2=new Cat(HEATH_CONDITION[0],LivingBeing::BEST_SENSE[0],55);
 $cat2->print();
 
 ?>
