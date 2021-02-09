@@ -84,14 +84,9 @@ protected function getSpeakingCapability()
 }
 
 //function method
-public function oneYearOlder()
-  {                                   
-    if($this->age>50)
-      echo "Exception message is: Error: Age value too high<br><br><br>";
-    else {
-      $this->age=$this->age*2;
-      echo "I'm a cat, I'll be <b>$this->age</b> my next birthday<br><br><br>";
-    }
+function oneYearOlder()
+  {
+    $this->Age=++$this->Age;
   }
 }
 

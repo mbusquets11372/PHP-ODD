@@ -36,12 +36,26 @@ public function __construct($healthCondition,$bestSense,$age)
   $this->bestSense=(parent::BEST_SENSE[0]);*/
 }
 
+//function next birthday
+public function NextBirthday(){
+  $this->age=$this->age*2;
+}
+
+//function +1
+function oneYearOlder()
+{
+  if ($this->age>50)
+    throw new Exception('Error: Age value too high');
+  else
+    Cat::NextBirthday();
+    echo "I'm a cat, i will be<b> ".$this->age."</b> my next birthay<br><br>";
+}
+
 //print
 public function print()
 {
   echo "I'm a cat in <b>".$this->gethealthCondition()."</b> condition of health<br>";
   echo "and my best sense is <b>".$this->getbestSense()."</b> my age is ".$this->getAge()."<br>";
-  echo parent::oneYearOlder();
 }
 
 }

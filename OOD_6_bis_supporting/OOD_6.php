@@ -12,9 +12,24 @@ require "Cat.php";
 $cat1=new Cat(HEATH_CONDITION[0],LivingBeing::BEST_SENSE[0],50);
 $cat1->print();
 
+try {
+  $cat1->oneYearOlder();
+}
+catch (Exception $e) {
+    echo "S'ha capturat l'excepció: " . $e->getMessage() . "<br><br>";
+}
+
+
 //major de 50
 $cat2=new Cat(HEATH_CONDITION[0],LivingBeing::BEST_SENSE[0],55);
 $cat2->print();
+
+try {
+  $cat2->oneYearOlder();
+}
+catch (Exception $e) {
+    echo "S'ha capturat l'excepció: " . $e->getMessage() . "<br><br>";
+}
 
 ?>
 </body>
