@@ -11,7 +11,7 @@ require "apprentice.php";
 
 $teacher1=new Teacher('Rose','12345678A',1500);//using __construct from Person
 $teacher1->setSalary(10);
-$student1=new Apprentice('Marti','41583243L','ASIX','Ies Manacor');
+$student1=new Student('Marti','41583243L','ASIX');
 $student2=new Apprentice('Pauline','34755295L','WEB','Ies PortoCristo');
 
 echo $teacher1->print();//using method print implemented on Person class
